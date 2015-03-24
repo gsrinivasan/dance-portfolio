@@ -1,0 +1,40 @@
+body {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	background: url('../img/wood.jpg');
+	font-family: "Abemo";
+	font-size: 1.5em;
+	background: url('../img/wood.JPG');
+	
+}
+
+.jumbotron {
+	border: 2px solid black;
+	border-radius: -10;
+	background-color: white;
+	padding: 0;
+}
+
+.title {
+	text-transform: uppercase;
+	letter-spacing: 3;
+	font-size: 3em;
+}
+
+.navbar {
+	background-color: white;
+	border: none;
+}
+
+.navbar-nav {
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 3px;
+	display: inline-block;
+    float: none;
+    vertical-align: top;
+    background-color: white;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
