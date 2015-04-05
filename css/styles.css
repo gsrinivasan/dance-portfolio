@@ -3,14 +3,13 @@ body {
 	background: url('../img/wood.jpg');
 	font-family: "Abemo";
 	font-size: 1.5em;
-	background: url('../img/wood.JPG');
+	background: #FEF1E0;
 	
 }
 
 .jumbotron {
-	border: 2px solid black;
-	border-radius: -10;
-	background-color: white;
+	border: 12px double #3F0632;
+	background-color: #FEF1E0;
 	padding: 0;
 }
 
@@ -21,7 +20,7 @@ body {
 }
 
 .navbar {
-	background-color: white;
+	background-color: #FEF1E0;
 	border: none;
 }
 
@@ -32,9 +31,64 @@ body {
 	display: inline-block;
     float: none;
     vertical-align: top;
-    background-color: white;
+    background-color: #FEF1E0;
+    color: black;
 }
 
 .navbar .navbar-collapse {
     text-align: center;
+}
+
+.navbar-nav a {
+	padding: 12px 10px 10px;
+	/*color: #566473;*/
+	color: black;
+	text-shadow: none;
+	font-weight: 700;
+}
+
+.navbar-nav a::before,
+.navbar-nav a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #3F0632;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform: scale(0.85);
+	-moz-transform: scale(0.85);
+	transform: scale(0.85);
+}
+
+.navbar-nav a::after {
+	-webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: top 0.3s, opacity 0.3s, transform 0.3s;
+}
+
+.navbar-nav a:hover::before,
+.navbar-nav a:hover::after,
+.navbar-nav a:focus::before,
+.navbar-nav a:focus::after {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+}
+
+.navbar-nav a:hover::after,
+.navbar-nav a:focus::after {
+	top: 0%;
+	/*opacity: 1;*/
+}
+
+p {
+	font-size: 1.5em;
+}
+
+.col-lg-4 .col-sm-6 .col-xs-12 caption {
+	color: red;
 }
